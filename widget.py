@@ -21,7 +21,7 @@ cccc = len(cp)
 # first = '__qtablewidgetitem'
 first = 'item'
 name = []
-name1=[]
+name1 = []
 
 
 class Widget(QWidget):
@@ -35,15 +35,17 @@ class Widget(QWidget):
             name.append(first+str(i))
             print(str(name[i]))
             name[i] = QTableWidgetItem()
-            name[i]=self.ui.tableWidget.horizontalHeaderItem(i)
             self.ui.tableWidget.setHorizontalHeaderItem(i, name[i])
-            name[i].ui.setText(QCoreApplication.translate("Widget",cp[i], None));
+            # name[i]=self.ui.tableWidget.horizontalHeaderItem(i)
+            # name[i].ui.setText(QCoreApplication.translate("Widget",cp[i], None));
         self.ui.tableWidget.setRowCount(len(ct3))
         for j in range(0, len(ct3)):
             name1.append(str(ct3[j]))
-            name1[j]=QTableWidgetItem()
-            self.ui.tableWidget.setVerticalHeaderItem(j,name1[j])
-        self.ui.pushButton.setText(QCoreApplication.translate("Widget", u"执行", None))
+            print(name1[j])
+            name1[j] = QTableWidgetItem()
+            self.ui.tableWidget.setVerticalHeaderItem(j, name1[j])
+        self.ui.pushButton.setText(
+            QCoreApplication.translate("Widget", u"执行", None))
 
 
 if __name__ == "__main__":
