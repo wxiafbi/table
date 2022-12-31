@@ -36,6 +36,6 @@ class Ui_Widget(object):
     def retranslateUi(self, Widget):
         Widget.setWindowTitle(QCoreApplication.translate("Widget", u"Widget", None))
         self.pushButton.setText(QCoreApplication.translate("Widget", u"PushButton", None))
-        self.pushButton_2.setText(QCoreApplication.translate("Widget", u"PushButton", None))
+        self.pushButton_2.setText(QCoreApplication.translate("Widget", u"查询", None))
     # retranslateUi
 
